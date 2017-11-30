@@ -1,0 +1,246 @@
+body {
+  width: 99vw;
+  height: 99vh;
+  padding: 1%;
+  margin: 0;
+  font-family: Circular, "Helvetica Neue", Helvetica, Roboto, Arial,sans-serif;
+}
+
+.main {
+  background-color: #E7AE00;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.logo {
+  width: 4vw;
+  height: 11vh;
+  position: absolute;
+  top: 5%;
+  left: 3.5%;
+  background-color: #F6BD0E;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  width: 0.9vw;
+  height: 4vh;
+  left: 25%;
+  top: 30%;
+  background-color: white;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  border-radius: 100px;
+  background-color: white;
+  width: 25%;
+  height: 25%;
+  top: 30%;
+  left: 50%;
+}
+
+.menu-btn {
+  color: white;
+  position: fixed;
+  top: 52px;
+  right: calc(5vw - 12px);
+  z-index: 1002;
+  height: 36px;
+  padding-right: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  background: 0 0;
+  border: none;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transition: transform 1.2s cubic-bezier(.19,1,.22,1);
+  transition: transform 1.2s cubic-bezier(.19,1,.22,1),-webkit-transform 1.2s cubic-bezier(.19,1,.22,1);
+}
+
+.menu-btn:active,
+.menu-btn:checked {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-btn__text {
+  position: relative;
+  top: -2px;
+}
+
+.menu-btn__icon {
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 0;
+  width: 24px;
+  height: 14px;
+  margin-left: 18px;
+}
+
+.menu-btn__icon span {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease,-webkit-transform .5s ease;
+}
+
+.menu-btn__icon span:nth-child(1) {
+  top: 0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.menu-btn__icon span:nth-child(2) {
+  top: 6px;
+  -webkit-transform: translate3d(0,0,0) scaleX(1);
+  transform: translate3d(0,0,0) scaleX(1);
+}
+
+.menu-btn__icon span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 34%;
+  z-index: 5;
+  color: white;
+  width: 100%;
+}
+
+.menu h1 {
+  font-stretch: extra-expanded;
+  font-size: 8vw;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  right: 0;
+  left: 0;
+}
+
+
+.menu-list {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 5rem;
+}
+
+.menu-list .active {
+  opacity: 1 !important;
+}
+
+.menu-list li {
+  margin: 5px 20px;
+  font-size: 100%;
+  opacity: .25;
+}
+
+.menu-list li:hover {
+  opacity: .5;
+}
+
+.menu-list li a {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+.social-list {
+  position: fixed;
+  bottom: 45px;
+  left: calc(5vw - 15px);
+  z-index: 1001;
+  width: 30px;
+  z-index: 2
+}
+
+.social-list__item {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.social-list__item a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.social-list__item .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  fill: #fff
+}
+
+.social-list__item .icon--tw {
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px
+}
+
+.social-list__item .icon--fb {
+  top:6px;
+  left:6px;
+  width:18px;
+  height:18px
+}
+
+.horizontal-bars {
+  position: absolute;
+  display: block;
+  width: 97vw;
+  height: 94vh;
+  z-index: 2;
+}
+
+.horizontal-bars div {
+  display: block;
+  width: 27vw;
+  height: 20vh;
+  background-color: #DEDFCF;
+  margin: 1% auto;
+}
+
+.bar-1 {
+  margin-top: 5% !important;
+  margin-right: 28% !important;
+}
+
+.bar-2 {
+  margin-left: 28% !important;
+}
